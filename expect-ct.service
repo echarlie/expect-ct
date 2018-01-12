@@ -1,0 +1,10 @@
+[Unit]
+Description=expect-ct error catcher
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/expect-ct
+
+[Install]
+WantedBy=multi-user.target
